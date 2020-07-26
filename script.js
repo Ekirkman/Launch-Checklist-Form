@@ -47,7 +47,7 @@ window.addEventListener("load",function (){
             alert("Invalid Input");
          }
          else if(cargoMass < 10000 && fuelLevel > 10000){
-            launchStatus.innerHTML = "<h2>Shuttle Ready for Launch</h2>";
+            launchStatus.innerHTML = "Shuttle Ready for Launch";
             launchStatus.style.color="green";
             faultyItems.style.visibility="visible";
             pilotStatus.innerHTML =` ${pilotName} is ready for launch`;
@@ -56,7 +56,7 @@ window.addEventListener("load",function (){
             cargoStatus.innerHTML =`${cargoMessage} for launch`;
          }
          else if(cargoMass > 10000 || fuelLevel < 10000){
-            launchStatus.innerHTML = "<h2>Shuttle Not Ready for Launch</h2>";
+            launchStatus.innerHTML = "Shuttle Not Ready for Launch";
             launchStatus.style.color="red";
             faultyItems.style.visibility="visible";
             if (fuelLevel < 10000){
